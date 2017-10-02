@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Hello Spring Boot!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" id="header_navbar" th:fragment="header">
+    <div class="container" id="header_main">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div style="margin-right: 50px">
+                <a class="navbar-brand" id="header_brand" href="#">eidBase</a>
+                <img th:src="@{images/g-PA.png}" id="header_image" />
+            </div>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="header_nav">
+               <!-- <li class="header-nav"><a href="#" th:href="@{/}">Home</a></li> -->
+                <button class="button" style="margin-right: 20px; margin-left: 100px"><span>Registrierung </span></button>
+                <button class="button"><span>Anmeldung </span></button>
+            </ul>
+
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+</body>
+</html>

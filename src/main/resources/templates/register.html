@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+
+<head>
+    <title>eIDBase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+
+
+
+</head>
+<body>
+<th:block layout:fragment="content">
+
+
+
+
+        <div class="container" id="register">
+
+            <input style ="position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);width: 30%;border-style: solid;border-radius: 10px;border-color: white;" class="form-group" type="text" th:value="${fullname}"  xmlns:th="http://www.w3.org/1999/xhtml"/>
+
+
+            <form  th:action="@{/register}"  method="POST"   th:object="${account}"   id="registerform">
+                <div id="registerInformation"><p style="font-weight: 700;color:white;padding: 0;"> Email </p><input id="registerInput" type="text" name="eMail" th:value="*{eMail}"/></div>
+                <button class=".btn-default" id="registerSubmitButton" type="submit"> Registrierung abschließen</button>
+            </form>
+
+
+        </div>
+
+
+</th:block>
+</body>
+</html>

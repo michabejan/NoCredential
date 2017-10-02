@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+
+<head>
+    <title>eIDBase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+
+
+
+</head>
+<body>
+<th:block layout:fragment="content">
+
+
+    <div id="base">
+
+        <div class="container" id="box1a">
+         <!--   <form  th:action="@{/upload}"   style="margin-left:20px;margin-top:50px"name="uploadedListOperations"   target="_self" method="post" enctype="multipart/form-data" xmlns:th="http://www.w3.org/1999/xhtml">
+                <select class="form-control"   id="holder" name="uploadedFiles"
+                        size="10" style="width: 100%" onloadstart="init();" onchange="switchControls();">
+                    <option style="color:green"  id="fileList" ></option>
+                    <option style="color:green" th:each="file,iter : ${fileList}" th:text="${file}" id="fileList"></option>
+                </select>
+                <input style="width:100px; height:25px" type="submit" value="Hochladen" />
+            </form>
+
+           <!--<table id="holder">
+                <tr>
+                    <td>Drop files here</td>
+                </tr>
+                <tr>
+                    <td><ul id="fileList"></ul></td>
+                </tr>
+            </table>-->
+
+            <input style ="width: 100%;border-style: solid;border-radius: 10px;border-color: white;color: black;" class="form-group" type="text" th:value="${accountName}"  xmlns:th="http://www.w3.org/1999/xhtml"/>
+
+            <form  th:action="@{/search}"  method="POST">
+                <div ><p style="font-weight: 700;color:black;padding: 0;"> Nach Nutzer suchen: </p><input type="text" style="color:black" name="name" th:value="${name}"/></div>
+                <button class=".btn-default" style="color:black" type="submit"> Suchen</button>
+            </form>
+
+
+            <form  th:action="@{/upload}" class="dropzone" method="POST" enctype="multipart/form-data"  xmlns:th="http://www.w3.org/1999/xhtml" id="fileselect">
+                        <button type="submit">Upload Files</button>
+            </form>
+
+            <form  th:action="@{/download}"   style="margin-top:50px"  target="_self" method="GET" xmlns:th="http://www.w3.org/1999/xhtml">
+                <select class="form-control"   id="uploadedFiles" name="uploadedFiles"
+                        size="10" style="width: 100%">
+                    <option style="color:green" th:each="file,iter : ${fileList}" th:text="${file}"></option>
+                </select>
+                <input style="width:100px; height:25px" type="submit" value="Download" />
+            </form>
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript" th:inline="javascript">
+        $(document).ready(function() {
+            $("#delete_document").click(function()
+            {
+
+                $("#defile").text($("#uploadedFiles option:selected").text());
+                $("#defile").attr('value',$("#uploadedFiles option:selected").text());
+            });
+
+            $("#download_document").click(function()
+            {
+
+                $("#dfile").text($("#uploadedFiles option:selected").text());
+                $("#dfile").attr('value',$("#uploadedFiles option:selected").text());
+            });
+
+
+        });
+        </script>
+</th:block>
+</body>
+</html>

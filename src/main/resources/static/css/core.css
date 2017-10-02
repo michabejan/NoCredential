@@ -1,0 +1,210 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.social-links {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.social-links > li {
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+}
+
+#header_main{
+    background-color: white;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-left: 2%;
+}
+
+#header_navbar{
+    background-color: white;
+}
+
+#header_brand{
+  color:lawngreen;
+    padding-left: 20px;
+    font-size:30px;
+
+
+}
+
+#header_nav{
+    padding-left: 30vh;
+}
+#header_image{
+    height:40px;
+    width:40px;
+    margin-top:1%;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color:lawngreen !important;
+    font-size: 17px;
+}
+
+#main{
+
+    height:600px;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.button {
+    border-style:solid;
+    border-radius: 10px;
+    background-color: white;
+    color: lightgrey;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+#base{
+    background-image: url("../images/4.jpeg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#base_qr{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width:200px;
+    height:200px;
+}
+
+#box1a{
+    border-style:solid;
+    border-radius: 10px;
+    color:white;
+    height: 60vh !important;
+    background: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+table#holder {
+    width: 400px;
+
+    font-family:Verdana;
+}
+table#holder tr:first-child {
+    height:50px;
+    text-align:center;
+}
+table#holder tr:last-child {
+    height:300px;
+    line-height: 50px;
+}
+table#holder li img {
+    height: 30px;
+}
+#fileList{
+    color:black;
+}
+
+
+body
+{
+    font-family: "Segoe UI", Tahoma, Helvetica, freesans, sans-serif;
+    font-size: 90%;
+    margin: 10px;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+#fileselect{
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+    color: #555;
+    border: 2px dashed #555;
+    border-radius: 7px;
+    cursor: default;
+}
+
+
+#register{
+    background-image: url("../images/5.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#registerform{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+#registerInput{
+    background: transparent;
+    border: 0; margin-left: 100px;font-weight: 700;color: white;
+}
+
+#registerInformation{
+    border-style: solid;border-radius: 10px;border-color: white;display: flex;
+}
+
+#registerSubmitButton{
+    height: 5vh; width:100%; border-style: solid; margin-top: 20px; border-radius: 10px;border-color: white; color: white; background: transparent;
+}
